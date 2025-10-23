@@ -1,0 +1,21 @@
+# config/config.yaml
+camera_node:
+  ros__parameters:
+    # Chemin du capteur libcamera (Device Tree path)
+    camera: 0
+
+    # Format et timing
+    format: "RGB888"    # ex: RGB888, YUYV, MJPEG, etc. (selon capteur/driver)
+    width: 854
+    height: 480
+    framerate: 30
+
+    # Rôle libcamera (généralement "video")
+    role: "video"
+
+    # Métadonnées ROS
+    frame_id: "camera_link"
+    camera_name: "rpi_csi"
+
+    # Simu (si besoin)
+    use_sim_time: false
