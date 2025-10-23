@@ -12,6 +12,4 @@ if [ -f "/opt/ws/install/setup.bash" ]; then
 else
   echo "WARN: /opt/ws/install/setup.bash not found (build manquant ?)"
 fi
-ldd /usr/local/bin/cam | grep -i libcamera
-ls -l  /usr/local/lib/aarch64-linux-gnu/libcamera*
 exec "$@"
